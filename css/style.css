@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower");
 @import url("https://fonts.googleapis.com/css?family=Merienda");
 
+h3{
+  margin: 0 0 10px;
+}
 
 p { 
     font-size: 1em; 
     line-height: 1.5em;
+  }
+  figure{
+    margin: 0 0 10px;
   }
   
   figcaption {
@@ -19,10 +25,14 @@ p {
     text-shadow: 0 2px 3px #000;
   }
   
-  
-  #logo {
-   
+  .shadow{
+    box-shadow: 0 3px 10px #333;
   }
+.border-right{
+  border-right: 1px dotted #ccc;
+  padding-right: 30px;
+
+}
 
   
   #logo h1 { 
@@ -32,7 +42,9 @@ p {
   #logo h2 {
     font-family: 'Elsie Swash Caps', cursive;
   }
-  
+  details div{
+    height: 221px;
+  }
 
   
   #details a:link, #details a:visited {
@@ -48,7 +60,8 @@ p {
   #details a:active {
     color: red;
   }
-  img, video, audio{
+  img, video, audio, iframe, table, form{
+    width: 100%;
     max-width: 100%;
   }
 
@@ -66,16 +79,16 @@ p {
   .col-1{
 float: left;
 width: 32%;
-background: #ccc;
+
   }
   .col-2{
     float: left;
     width: 66%;
-    background: #ccc;
+    
 
   }
   .col-3{
-    background: #ccc;
+   
 
   }
   .clearfix:after{
@@ -89,14 +102,15 @@ background: #ccc;
 
   }
   [class*="col-"]{
-    margin-left:2%;
+    margin-left: 2%;
   }
   .first{
-    margin-left:0%;
+    margin-left: 0%;
   }
   section{
     padding:20px ;
     margin-bottom: 20px;
+    background: white;
   }
   #social{
    position: fixed;
@@ -113,10 +127,126 @@ background: #ccc;
 
   }
   header{
+margin: 0 0 3px;
+  }
+  #navnar{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: #fff;
-    z-index: 1 ;
+    z-index: 2;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+
   }
+  #navbar nav{
+    border-left: 1px solid #ccc;
+  }
+  #navbar a {
+    display: inline-block;
+    width: 16.666667%;
+    margin: 0;
+    padding: 22px 0;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    border-right: 1px solid #ccc; 
+    text-decoration: none;
+    font: 1em "Trebuchet MS", Arial, sans-serif;
+  }
+  #navbar nav a.selected{
+    background: #333;
+    color: white;
+
+  }
+  .clear{
+    clear: both;
+  }
+ . white-wood{
+   background:url(C:\Users\IB-1\Desktop\images.jpg) no-repeat center top;
+   background-size: cover;
+
+  }
+  .light-fade{
+    background: #efefef; /* Old browsers */
+    background: -moz-linear-gradient(
+      top,
+      #efefef 0%,
+      #ffffff 24%,
+      #ffffff 68%,
+      #dddddd 100%
+    ); /* FF3.6+ */
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0%, #efefef),
+      color-stop(24%, #ffffff),
+      color-stop(68%, #ffffff),
+      color-stop(100%, #dddddd)
+    ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(
+      top,
+      #efefef 0%,
+      #ffffff 24%,
+      #ffffff 68%,
+      #dddddd 100%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(
+      top,
+      #efefef 0%,
+      #ffffff 24%,
+      #ffffff 68%,
+      #dddddd 100%
+    ); /* Opera 11.10+ */
+    background: -ms-linear-gradient(
+      top,
+      #efefef 0%,
+      #ffffff 24%,
+      #ffffff 68%,
+      #dddddd 100%
+    ); /* IE10+ */
+    background: linear-gradient(
+      to bottom,
+      #efefef 0%,
+      #ffffff 24%,
+      #ffffff 68%,
+      #dddddd 100%
+    ); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efefef", endColorstr="#dddddd", GradientType=0);}
+    
+    medium-fade{
+      background: rgb(229, 229, 229); /* Old browsers */
+background: -moz-linear-gradient(
+  top,
+  rgba(229, 229, 229, 1) 0%,
+  rgba(255, 255, 255, 1) 99%
+); /* FF3.6+ */
+background: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0%, rgba(229, 229, 229, 1)),
+  color-stop(99%, rgba(255, 255, 255, 1))
+); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(
+  top,
+  rgba(229, 229, 229, 1) 0%,
+  rgba(255, 255, 255, 1) 99%
+); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(
+  top,
+  rgba(229, 229, 229, 1) 0%,
+  rgba(255, 255, 255, 1) 99%
+); /* Opera 11.10+ */
+background: -ms-linear-gradient(
+  top,
+  rgba(229, 229, 229, 1) 0%,
+  rgba(255, 255, 255, 1) 99%
+); /* IE10+ */
+background: linear-gradient(
+  to bottom,
+  rgba(229, 229, 229, 1) 0%,
+  rgba(255, 255, 255, 1) 99%
+);
+    }
